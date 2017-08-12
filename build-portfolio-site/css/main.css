@@ -14,6 +14,11 @@ header {
   width: 100%;
 }
 
+#header-logo {
+  width: 70px;
+  height: 70px;
+}
+
 #header-name {
   font-weight: 300;
 }
