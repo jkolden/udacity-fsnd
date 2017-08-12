@@ -1,0 +1,41 @@
+img {
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+}
+
+header {
+  width: 100%;
+}
+
+#cover-image {
+  width: 100%;
+}
+
+#featured-work-section {
+  width: 100%;
+  order: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#featured-work-title {
+  width: 100%;
+  order: 0;  // Flexbox order under #featured-work-section
+}
+
+#first-work {
+  width: 33%;
+  order: 1;  // Flexbox order under #featured-work-section
+}
+
+#second-work {
+  width: 33%;
+  order: 2;  // Flexbox order under #featured-work-section
+}
+
+#third-work {
+  width: 33%;
+  order: 3;  // Flexbox order under #featured-work-section
+}
