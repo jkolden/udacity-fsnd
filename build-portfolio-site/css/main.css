@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   margin: 0;
   box-sizing: border-box;
@@ -35,9 +35,9 @@ header {
 }
 
 #header-name {
-  font-weight: 300;
+  font-weight: 100;
   font-size: 3.0em;
-  margin: 0 15px;
+  margin: 15px 15px 0 0;
 }
 
 #header-job {
