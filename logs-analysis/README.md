@@ -16,4 +16,4 @@ If the command is executed successfully, you will see the same output as "exampl
 
 ### Views
 This submission utilizes [views](https://www.postgresql.org/docs/current/static/sql-createview.html).  
-The views are created or replaced to the latest automatically when executing the command above.
+The views are created or replaced to the latest state automatically when executing the command above.
