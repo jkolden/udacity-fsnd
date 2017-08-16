@@ -15,6 +15,10 @@ create or replace view most_viewed_paths as
 # The view holds articles' title, author's ID and PV
 # in descending order of PV.
 # Used to generate the 1st and 2nd report.
+#
+# * `articles` table and `most_viewed_paths` view are joined
+#   if the both rows have the same path/slug.
+#   The comparison between them are done by the usage of `concat` function.
 query_initialize_view_most_viewed_articles = """
 create or replace view most_viewed_articles as
     select title, author as author_id, pv
@@ -26,6 +30,15 @@ create or replace view most_viewed_articles as
 # The view holds daily percentages of error (404) rate
 # in the order of date.
 # Used to generate the 3rd report.
+#
+# * `time` as timestamp is truncated into date (year, month, day)
+#    so that we can aggregate the daily error rates.
+# * In the case expresssion, we assume there are only two status:
+#   "200 OK" or "404 NOT FOUND" because the dump data has only
+#   these two status.
+# * `count(case ... end)` below indicates the daily number of error logs,
+#   while `count(*)` means the total number of logs in one day.
+#   Thus, the former divided by the latter equals the daily error rate.
 query_initialize_view_daily_error_rates = """
 create or replace view daily_error_rates as
     select date_trunc('day', time) as date,
