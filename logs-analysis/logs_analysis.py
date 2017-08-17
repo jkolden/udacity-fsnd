@@ -98,22 +98,25 @@ def initialize_views():
 def select_three_most_viewed_articles():
     conn, cursor = connect("news")
     cursor.execute(query_select_three_most_viewed_articles)
-    return cursor.fetchall()
+    result = cursor.fetchall()
     conn.close()
+    return result
 
 
 def select_most_viewed_authors():
     conn, cursor = connect("news")
     cursor.execute(query_select_most_viewed_authors)
-    return cursor.fetchall()
+    result = cursor.fetchall()
     conn.close()
+    return result
 
 
 def select_daily_error_rate_more_than_one_percent():
     conn, cursor = connect("news")
     cursor.execute(query_select_daily_error_rate_more_than_one_percent)
-    return cursor.fetchall()
+    result = cursor.fetchall()
     conn.close()
+    return result
 
 
 # Print the 1st report
