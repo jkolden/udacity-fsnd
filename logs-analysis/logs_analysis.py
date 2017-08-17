@@ -73,11 +73,21 @@ select *
 """
 
 
+# Connec to specified DB.
+# If something goes wrong, psycopg2.Error is raised.
+def connect(db_name):
+    try:
+        conn = psycopg2.connect(database=db_name)
+        cursor = conn.cursor
+        return conn, cursor
+    except psycopg2.Error as e:
+        raise e
+
+
 # Create views.
 # If they already exist, replace them with the latest ones.
 def initialize_views():
-    conn = psycopg2.connect(database="news")
-    cursor = conn.cursor()
+    conn, cursor = connect("news")
     cursor.execute(query_initialize_view_most_viewed_paths)
     cursor.execute(query_initialize_view_most_viewed_articles)
     cursor.execute(query_initialize_view_daily_error_rates)
@@ -86,24 +96,21 @@ def initialize_views():
 
 
 def select_three_most_viewed_articles():
-    conn = psycopg2.connect(database="news")
-    cursor = conn.cursor()
+    conn, cursor = connect("news")
     cursor.execute(query_select_three_most_viewed_articles)
     return cursor.fetchall()
     conn.close()
 
 
 def select_most_viewed_authors():
-    conn = psycopg2.connect(database="news")
-    cursor = conn.cursor()
+    conn, cursor = connect("news")
     cursor.execute(query_select_most_viewed_authors)
     return cursor.fetchall()
     conn.close()
 
 
 def select_daily_error_rate_more_than_one_percent():
-    conn = psycopg2.connect(database="news")
-    cursor = conn.cursor()
+    conn, cursor = connect("news")
     cursor.execute(query_select_daily_error_rate_more_than_one_percent)
     return cursor.fetchall()
     conn.close()
