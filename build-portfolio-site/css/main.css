@@ -94,8 +94,8 @@ header {
   order: 3;  /* Flexbox order under #featured-work-section */
 }
 
-/* iPad and Nexus5 resolution */
-@media screen and (max-width: 768px) {
+/* including iPad (768px), iPad Pro (1024) and Nexus5 (360px) resolutions */
+@media screen and (max-width: 1024px) {
   a {
     display: block;
     padding: 17px 0 17px 0;
@@ -107,8 +107,8 @@ header {
   }
 }
 
-/* Nexus5 resolution */
-@media screen and (max-width: 360px) {
+/* including Nexus5 resolution (360px) */
+@media screen and (max-width: 600px) {
   header {
     width: 100%;
     height: auto;
