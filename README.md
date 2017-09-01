@@ -9,7 +9,8 @@ This repository contains the submissions of its projects.
 - README: [here](https://github.com/k-mats/udacity-fsnd/blob/master/movie-trailer-website/README.md)
 
 ## Project 2: Build a Portfolio Site
-WIP
+- Directory: [here](https://github.com/k-mats/udacity-fsnd/tree/master/build-portfolio-site)
+- README: [here](https://github.com/k-mats/udacity-fsnd/blob/master/build-portfolio-site/README.md)
 
 ## Project 3: Logs Analysis
 - Directory: [here](https://github.com/k-mats/udacity-fsnd/tree/master/logs-analysis)
