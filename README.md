@@ -16,6 +16,11 @@ This repository contains the submissions of its projects.
 - Directory: [here](https://github.com/k-mats/udacity-fsnd/tree/master/logs-analysis)
 - README: [here](https://github.com/k-mats/udacity-fsnd/blob/master/logs-analysis/README.md)
 
+## Project 4: Item Catalog
+This project is held by [another repository](https://github.com/k-mats/fullstack-nanodegree-vm).
+- Directory: [here](https://github.com/k-mats/fullstack-nanodegree-vm/tree/master/vagrant/catalog)
+- README: [here](https://github.com/k-mats/fullstack-nanodegree-vm/blob/master/vagrant/catalog/README.md)
+
 ## Caution ⚠️
 Udacity students must agree to [the honor code](https://udacity.zendesk.com/hc/en-us/articles/210667103-What-is-the-Udacity-Honor-Code-).
 
