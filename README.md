@@ -21,6 +21,13 @@ This project is held by [another repository](https://github.com/k-mats/fullstack
 - Directory: [here](https://github.com/k-mats/fullstack-nanodegree-vm/tree/master/vagrant/catalog)
 - README: [here](https://github.com/k-mats/fullstack-nanodegree-vm/blob/master/vagrant/catalog/README.md)
 
+## Project 5: Neighborhood Map
+WIP
+
+## Project 6: Linux Server Configuration
+- Directory: [here](https://github.com/k-mats/udacity-fsnd/tree/master/linux-server-configuration)
+- README: [here](https://github.com/k-mats/udacity-fsnd/blob/master/linux-server-configuration/README.md)
+
 ## Caution ⚠️
 Udacity students must agree to [the honor code](https://udacity.zendesk.com/hc/en-us/articles/210667103-What-is-the-Udacity-Honor-Code-).
 
